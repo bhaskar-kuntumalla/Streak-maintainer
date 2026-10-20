@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "StreakOS",
+    "slug": "streak-maintainer",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "streakos",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#0A0E2A",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E2A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.streakos",
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.example.streakos",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0E2A",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "versionCode": 1,
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "color": "#2EE6C5"
+        }
+      ]
+    ],
+    "experiments": {},
+    "web": {
+      "bundler": "metro"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "enabled": false
+    }
+  }
+}
